@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+    <!--Login-->
+    <definition name="login" template="/WEB-INF/views/layouts/login.jsp"/>
+
+    <!-- Base Define -->
+    <definition name="base.definition"
+                template="/WEB-INF/views/layouts/index.jsp">
+        <put-attribute name="title" value=""/>
+        <put-attribute name="header" value="/WEB-INF/views/baseFragments/header.jsp"/>
+        <put-attribute name="menu" value="/WEB-INF/views/baseFragments/menu.jsp"/>
+        <put-attribute name="body" value=""/>
+    </definition>
+
+    <!-- Body Admin  -->
+    <definition name="home" extends="base.definition">
+        <put-attribute name="title" value="Home Admin"/>
+        <put-attribute name="body" value="/WEB-INF/views/bodyFragments/home.jsp"/>
+    </definition>
+
+    <!-- News Page -->
+    <definition name="news" extends="base.definition">
+        <put-attribute name="title" value="news"/>
+        <put-attribute name="body" value="/WEB-INF/views/bodyFragments/news/news.jsp"/>
+    </definition>
+
+    <!-- News Status Page -->
+    <definition name="checkNews" extends="base.definition">
+        <put-attribute name="title" value="news check"/>
+        <put-attribute name="body" value="/WEB-INF/views/bodyFragments/news/news_status.jsp"/>
+    </definition>
+
+    <!-- Tag Page -->
+    <definition name="tag" extends="base.definition">
+        <put-attribute name="title" value="tag"/>
+        <put-attribute name="body" value="/WEB-INF/views/bodyFragments/news/tag.jsp"/>
+    </definition>
+
+    <!-- Category Page -->
+    <definition name="menu" extends="base.definition">
+        <put-attribute name="title" value="menu"/>
+        <put-attribute name="body" value="/WEB-INF/views/bodyFragments/category/menu.jsp"/>
+    </definition>
+    <definition name="bigCategory" extends="base.definition">
+        <put-attribute name="title" value="big category"/>
+        <put-attribute name="body" value="/WEB-INF/views/bodyFragments/category/big_category.jsp"/>
+    </definition>
+
+    <definition name="smallCategory" extends="base.definition">
+        <put-attribute name="title" value="small category"/>
+        <put-attribute name="body" value="/WEB-INF/views/bodyFragments/category/small_category.jsp"/>
+    </definition>
+
+    <!--================================ FORM_CREATE =========================-->
+    <!-- Category Page -->
+    <definition name="createBigCategory" extends="base.definition">
+        <put-attribute name="title" value="create big category"/>
+        <put-attribute name="body" value="/WEB-INF/views/form-change/category/changeBigCategory.jsp"/>
+    </definition>
+
+    <definition name="createSmallCategory" extends="base.definition">
+        <put-attribute name="title" value="create small category"/>
+        <put-attribute name="body" value="/WEB-INF/views/form-change/category/changeSmallCategory.jsp"/>
+    </definition>
+
+    <definition name="createMenu" extends="base.definition">
+        <put-attribute name="title" value="create menu"/>
+        <put-attribute name="body" value="/WEB-INF/views/form-change/category/chaneMenu.jsp"/>
+    </definition>
+
+    <!-- tag Page -->
+    <definition name="createTag" extends="base.definition">
+        <put-attribute name="title" value="create tag"/>
+        <put-attribute name="body" value="/WEB-INF/views/form-change/news/changeTag.jsp"/>
+    </definition>
+
+
+    <!--================================ FORM_ UPDATE =========================-->
+    <!--Update Category Page -->
+    <definition name="updateBigCategory" extends="base.definition">
+        <put-attribute name="title" value="update big category"/>
+        <put-attribute name="body" value="/WEB-INF/views/form-change/category/changeBigCategory.jsp"/>
+    </definition>
+
+    <definition name="updateSmallCategory" extends="base.definition">
+        <put-attribute name="title" value="update small category"/>
+        <put-attribute name="body" value="/WEB-INF/views/form-change/category/changeSmallCategory.jsp"/>
+    </definition>
+
+    <definition name="updateMenu" extends="base.definition">
+        <put-attribute name="title" value="update menu"/>
+        <put-attribute name="body" value="/WEB-INF/views/form-change/category/chaneMenu.jsp"/>
+    </definition>
+
+    <!-- Update Tag Page -->
+    <definition name="updateTag" extends="base.definition">
+        <put-attribute name="title" value="update tag"/>
+        <put-attribute name="body" value="/WEB-INF/views/form-change/news/changeTag.jsp"/>
+    </definition>
+</tiles-definitions>

@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="admin_forum_tinh_te:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>admin_forum_tinh_te</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="adminforum-0.0.1-SNAPSHOT.war">
+      <element id="artifact" artifact-name="admin_forum_tinh_te:war exploded" />
+    </root>
+  </artifact>
+</component>
